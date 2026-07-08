@@ -256,3 +256,6 @@ if (menuBtn && newNavLinks) {
     });
 
 }
+
+document.getElementById("year").textContent =
+new Date().getFullYear();

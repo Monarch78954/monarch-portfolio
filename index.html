@@ -1,28 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-    <script type="application/ld+json">
-    {
-      "@context":"https://schema.org",
-      "@type":"Person",
-      "name":"Monarch Bhardwaj",
-      "url":"https://monarchbhardwaj.in",
-      "jobTitle":"Staff Mobile Engineer",
-      "image":"https://monarchbhardwaj.in/assets/profile.png",
-      "sameAs":[
-        "https://www.linkedin.com/in/monarch-bhardwaj-355149a9/"
-      ],
-      "knowsAbout":[
-        "Swift",
-        "SwiftUI",
-        "Flutter",
-        "React Native",
-        "iOS Development",
-        "Mobile Architecture",
-        "REST APIs"
-      ]
-    }
-    </script>
     <head>
+        <!-- Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-LFJBL6SZN7"></script>
+
+        <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag(){
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-LFJBL6SZN7');
+        </script>
+        
+        <!-- JSON-LD -->
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Monarch Bhardwaj",
+          "url": "https://monarchbhardwaj.in/",
+          "image": "https://monarchbhardwaj.in/assets/profile.png",
+          "jobTitle": "Staff Mobile Engineer",
+          "description": "Staff Mobile Engineer with 10+ years of experience building enterprise iOS, Flutter and React Native applications.",
+          "email": "mailto:monarchbhardwaj@gmail.com",
+          "telephone": "+91-7895475101",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Gurgaon",
+            "addressRegion": "Haryana",
+            "addressCountry": "India"
+          },
+          "sameAs": [
+            "https://www.linkedin.com/in/monarch-bhardwaj-355149a9",
+            "https://github.com/Monarch78954"
+          ],
+          "knowsAbout": [
+            "iOS",
+            "Swift",
+            "SwiftUI",
+            "Flutter",
+            "React Native",
+            "Clean Architecture",
+            "MVVM",
+            "REST APIs",
+            "Mobile Architecture",
+            "Azure DevOps",
+            "CI/CD"
+          ],
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Open to Staff Mobile Engineer & Technical Leadership Opportunities"
+          }
+        }
+        </script>
+        
+        <!-- Favicon -->
         <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
@@ -40,11 +76,7 @@
                     <!-- <title>Monarch Bhardwaj | Staff Mobile Engineer</title>-->
                     <!-- Primary Meta Tags -->
                     <title>Monarch Bhardwaj | Staff Mobile Engineer | iOS • Flutter • React Native</title>
-                    
-                    <meta charset="UTF-8">
-                        
-                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                            
+                                                                        
                             <meta name="title" content="Monarch Bhardwaj | Staff Mobile Engineer">
                                 
                                 <meta name="description"
@@ -82,7 +114,7 @@
                                                                             content="10+ years of experience building secure enterprise mobile applications using iOS, Flutter and React Native.">
                                                                             
                                                                             <meta property="og:image"
-                                                                                content="https://monarchbhardwaj.in/assets/preview.jpg">
+                                                                                content="assets/preview.png">
                                                                                 
                                                                                 <meta property="og:site_name"
                                                                                     content="Monarch Bhardwaj Portfolio">
@@ -97,8 +129,7 @@
                                                                                         <meta name="twitter:image" content="assets/preview.png">
                                                                                         
                                                                                         
-                                                                                        <meta
-                                                                                        name="description"
+                                                                                        <meta name="description"
                                                                                         content="Staff Mobile Engineer with 10+ years of experience building enterprise mobile applications."/>
                                                                                         
                                                                                         <link rel="preconnect"
@@ -117,13 +148,14 @@
                                                                                                             
                                                                                                         </head>
     
-    <button id="scrollTop">
-
-    ↑
-
-    </button>
-    
     <body>
+        <!-- ================= SCROLL TO TOP ================= -->
+        <button id="scrollTop">
+
+        ↑
+
+        </button>
+        
         <!-- ================= PRELOADER ================= -->
         <div id="preloader">
 
@@ -164,6 +196,8 @@
                 
                 <a
                     class="resume-btn"
+                    onclick="gtag('event', 'resume_download');"
+                    download
                     href="assets/Monarch_Bhardwaj_Staff_Mobile_Engineer.pdf">
                     
                     Resume
@@ -209,11 +243,22 @@
                         
                         <div class="hero-buttons">
                             
-                            <a href="#contact" class="btn-primary">
+                            <a
+                                href="#contact"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="btn-primary">
                                 Hire Me
                             </a>
                             
-                            <a href="assets/Monarch_Bhardwaj_Staff_Mobile_Engineer.pdf" class="btn-secondary">
+                            <a
+                                href="assets/Monarch_Bhardwaj_Staff_Mobile_Engineer.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                onclick="gtag('event', 'resume_download');"
+                                download
+                                class="btn-secondary">
+                                
                                 <i class="fa-solid fa-file-arrow-down"></i>
                                 Download Resume
                             </a>
@@ -882,6 +927,7 @@
                             href="https://www.linkedin.com/in/monarch-bhardwaj-355149a9/"
                             target="_blank"
                             rel="noopener noreferrer"
+                            onclick="gtag('event', 'linkedin_click');"
                             class="btn-primary">
                             
                             <i class="fa-brands fa-linkedin"></i>
@@ -891,7 +937,10 @@
                         
                         <a
                             href="assets/Monarch_Bhardwaj_Staff_Mobile_Engineer.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             download
+                            onclick="gtag('event', 'resume_download');"
                             class="btn-secondary">
                             
                             <i class="fa-solid fa-file-arrow-down"></i>
@@ -934,24 +983,35 @@
                     
                     <div class="footer-social">
                         
-                        <a href="https://www.linkedin.com/in/monarch-bhardwaj-355149a9/" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href="https://www.linkedin.com/in/monarch-bhardwaj-355149a9/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onclick="gtag('event', 'linkedIn');">
                             <i class="fa-brands fa-linkedin"></i>
                         </a>
                         
-                        <a href="mailto:monarchbhardwaj@gmail.com">
+                        <a
+                            href="mailto:monarchbhardwaj@gmail.com"
+                            onclick="gtag('event', 'email');">
                             <i class="fa-solid fa-envelope"></i>
                         </a>
                         
-                        <a href="assets/Monarch_Bhardwaj_Staff_Mobile_Engineer.pdf" download>
+                        <a
+                            href="assets/Monarch_Bhardwaj_Staff_Mobile_Engineer.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            download
+                            onclick="gtag('event', 'resume_download');">
                             <i class="fa-solid fa-download"></i>
                         </a>
                         
                     </div>
                     
                     <p class="copyright">
-                    © 2026 Monarch Bhardwaj
+                    © <span id="year"></span> Monarch Bhardwaj
                     <br>
-                    Designed & Developed by Monarch Bhardwaj.
+                    Designed, Developed & Optimized by Monarch Bhardwaj
                     </p>
                     
                 </div>
