@@ -1,0 +1,442 @@
+/* ==========================================
+ RESPONSIVE CSS
+ Monarch Portfolio
+ ========================================== */
+
+
+/* ==========================================
+ 1200px - Large Laptop
+ ========================================== */
+
+@media (max-width:1200px){
+    
+    .container{
+        width:94%;
+    }
+    
+    .hero h1{
+        font-size:72px;
+    }
+    
+    .section-title{
+        font-size:54px;
+    }
+    
+    .project-card,
+    .timeline-card{
+        padding:42px;
+    }
+    
+}
+
+
+/* ==========================================
+ 992px - Tablet
+ ========================================== */
+
+@media (max-width:992px){
+    
+    .container{
+        width:92%;
+    }
+    
+    /* ---------- NAVBAR ---------- */
+    
+    .resume-btn{
+        display:none;
+    }
+    
+    .menu-btn{
+        display:flex;
+    }
+    
+    .nav-links{
+        
+        position:fixed;
+        
+        top:82px;
+        
+        right:-100%;
+        
+        width:280px;
+        
+        height:calc(100vh - 82px);
+        
+        background:#08111f;
+        
+        transition:.35s;
+        
+        padding:40px;
+        
+        border-left:1px solid rgba(255,255,255,.08);
+        
+    }
+    
+    .nav-links.active{
+        right:0;
+    }
+    
+    .nav-links ul{
+        
+        display:flex;
+        
+        flex-direction:column;
+        
+        gap:28px;
+        
+    }
+    
+    /* ---------- HERO ---------- */
+    
+    .hero-grid{
+        grid-template-columns:1fr;
+        gap:60px;
+        text-align:center;
+    }
+    
+    .hero-content{
+        order:2;
+    }
+    
+    .hero-image{
+        order:1;
+    }
+    
+    .hero-description{
+        margin:auto;
+    }
+    
+    .hero-buttons{
+        justify-content:center;
+    }
+    
+    .hero h1{
+        font-size:64px;
+    }
+    
+    /* ---------- ABOUT ---------- */
+    
+    .about-container{
+        grid-template-columns:1fr;
+        gap:60px;
+    }
+    
+    .about-right{
+        grid-template-columns:repeat(2,1fr);
+    }
+    
+    /* ---------- PROJECTS ---------- */
+    
+    .project-card{
+        padding:36px;
+    }
+    
+    /* ---------- CONTACT ---------- */
+    
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+    
+}
+
+
+/* ==========================================
+ 768px - Mobile
+ ========================================== */
+
+@media (max-width:768px){
+    
+    section{
+        padding:90px 0;
+    }
+    
+    /* ---------- LOGO ---------- */
+    
+    .logo{
+        font-size:28px;
+    }
+    
+    /* ---------- HERO ---------- */
+    
+    .hero{
+        min-height:auto;
+        padding-top:130px;
+    }
+    
+    .hero-grid{
+        display:flex;
+        flex-direction:column;
+    }
+    
+    .hero-image{
+        order:1;
+    }
+    
+    .hero-content{
+        order:2;
+    }
+    
+    .hero-image img{
+        
+        width:260px;
+        
+        margin:auto;
+        
+    }
+    
+    .hero h1{
+        
+        font-size:50px;
+        
+        line-height:1.05;
+        
+    }
+    
+    .hero-description{
+        
+        font-size:18px;
+        
+    }
+    
+    .hero-buttons{
+        
+        flex-direction:column;
+        
+        gap:18px;
+        
+    }
+    
+    .hero-buttons a{
+        
+        width:100%;
+        
+    }
+    
+    /* ---------- TITLES ---------- */
+    
+    .section-title{
+        
+        font-size:42px;
+        
+    }
+    
+    /* ---------- ABOUT ---------- */
+    
+    .about-container{
+        
+        grid-template-columns:1fr;
+        
+    }
+    
+    .about-right{
+        
+        grid-template-columns:1fr 1fr;
+        
+        gap:18px;
+        
+    }
+    
+    .info-card{
+        
+        padding:28px;
+        
+    }
+    
+    /* ---------- TIMELINE ---------- */
+    
+    .timeline,
+    .project-timeline{
+        
+        margin-left:12px;
+        
+    }
+    
+    .timeline-card,
+    .project-card{
+        
+        margin-left:28px;
+        
+        padding:28px;
+        
+    }
+    
+    .timeline-card h3,
+    .project-card h3{
+        
+        font-size:28px;
+        
+    }
+    
+    .timeline-card h4{
+        
+        font-size:20px;
+        
+    }
+    
+    /* ---------- PROJECT FEATURES ---------- */
+    
+    .project-features{
+        
+        grid-template-columns:1fr;
+        
+        gap:14px;
+        
+    }
+    
+    /* ---------- TECH STACK ---------- */
+    
+    .tech-stack{
+        
+        gap:10px;
+        
+    }
+    
+    .tech-stack span{
+        
+        font-size:13px;
+        
+    }
+    
+    /* ---------- SKILLS ---------- */
+    
+    .skills-grid{
+        
+        grid-template-columns:1fr;
+        
+    }
+    
+    /* ---------- CONTACT ---------- */
+    
+    .contact-grid{
+        
+        grid-template-columns:1fr;
+        
+    }
+    
+    .contact-buttons{
+        
+        flex-direction:column;
+        
+    }
+    
+    .contact-buttons a{
+        
+        width:100%;
+        
+    }
+    
+    /* ---------- FOOTER ---------- */
+    
+    .footer-links{
+        
+        flex-direction:column;
+        
+        gap:16px;
+        
+    }
+    
+}
+
+
+/* ==========================================
+ 480px - Small Phones (iPhone SE)
+ ========================================== */
+
+@media (max-width:480px){
+    
+    .container{
+        width:90%;
+    }
+    
+    /* ---------- HERO ---------- */
+    
+    .hero h1{
+        
+        font-size:40px;
+        
+    }
+    
+    .hero-description{
+        
+        font-size:16px;
+        
+    }
+    
+    .hero-image img{
+        
+        width:210px;
+        
+    }
+    
+    /* ---------- TITLES ---------- */
+    
+    .section-title{
+        
+        font-size:34px;
+        
+    }
+    
+    /* ---------- TIMELINE ---------- */
+    
+    .timeline-card,
+    .project-card{
+        
+        padding:22px;
+        
+    }
+    
+    .timeline-card h3,
+    .project-card h3{
+        
+        font-size:24px;
+        
+    }
+    
+    .timeline-card h4{
+        
+        font-size:18px;
+        
+    }
+    
+    /* ---------- ABOUT ---------- */
+    
+    .about-right{
+        
+        grid-template-columns:1fr;
+        
+    }
+    
+    /* ---------- PROJECTS ---------- */
+    
+    .project-features{
+        
+        grid-template-columns:1fr;
+        
+    }
+    
+    .tech-stack{
+        
+        justify-content:center;
+        
+    }
+    
+    /* ---------- BUTTONS ---------- */
+    
+    .btn-primary,
+    .btn-secondary{
+        
+        width:100%;
+        
+        justify-content:center;
+        
+    }
+    
+    /* ---------- CONTACT ---------- */
+    
+    .contact-card{
+        
+        padding:24px;
+        
+    }
+    
+}

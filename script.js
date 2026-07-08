@@ -1,5 +1,44 @@
 history.replaceState(null, "", window.location.pathname);
 
+/* ================= PRELOADER ================= */
+window.addEventListener("load",()=>{
+
+    document
+        .getElementById("preloader")
+        .classList.add("hide");
+
+});
+
+/* ================= SCROLL TO TOP ================= */
+const scrollTopBtn =
+document.getElementById("scrollTop");
+
+window.addEventListener("scroll",()=>{
+
+    if(window.scrollY>400){
+
+        scrollTopBtn.style.display="block";
+
+    }else{
+
+        scrollTopBtn.style.display="none";
+
+    }
+
+});
+
+scrollTopBtn.onclick=()=>{
+
+    window.scrollTo({
+
+        top:0,
+
+        behavior:"smooth"
+
+    });
+
+};
+
 // ================= NAVBAR =================
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".nav-link");
@@ -33,6 +72,34 @@ window.addEventListener("scroll", () => {
     });
     
 });
+
+/* ================= TYPING EFFECT ================= */
+const text = "Staff Mobile Engineer. iOS • Flutter • React Native.";
+
+const typing = document.getElementById("typing");
+
+typing.classList.add("typing");
+
+let i = 0;
+
+function type() {
+
+    if (i < text.length) {
+
+        typing.innerHTML += text.charAt(i);
+        i++;
+        setTimeout(type, 45);
+
+    } else {
+
+        typing.classList.remove("typing");
+        typing.style.borderRight = "none";
+
+    }
+
+}
+
+type();
 
 // ================= ABOUT =================
 const counters = document.querySelectorAll(".counter");
